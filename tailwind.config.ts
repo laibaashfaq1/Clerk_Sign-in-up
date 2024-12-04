@@ -8,11 +8,10 @@ export default {
   ],
   theme: {
     extend: {
-      colors: {
-        background: "var(--background)",
-        foreground: "var(--foreground)",
-      },
     },
+    container:{
+      center: true,
+    }
   },
   plugins: [],
 } satisfies Config;
