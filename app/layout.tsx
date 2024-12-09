@@ -1,9 +1,7 @@
 import type { Metadata } from "next";
 import localFont from "next/font/local";
 import "./globals.css";
-import { 
-  ClerkProvider,
-} from "@clerk/nextjs";
+import { ClerkProvider} from "@clerk/nextjs";
 import Header from "./components/Header";
 import { dark } from '@clerk/themes';
 
@@ -33,6 +31,7 @@ export default function RootLayout({
     appearance={{
       baseTheme: dark,
     }}
+    publishableKey={process.env.NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY}
     >
     <html lang="en">
       <body
